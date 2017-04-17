@@ -1,1 +1,40 @@
-{     "devDependencies": {         "docxtemplater": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-docxtemplater",     "homepage": "https://github.com/npmtest/node-npmtest-docxtemplater",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-docxtemplater.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [docxtemplater (v3.0.11)](https://github.com/open-xml-templating/docxtemplater#readme) [![npm package](https://img.shields.io/npm/v/npmtest-docxtemplater.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-docxtemplater) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-docxtemplater.svg)](https://travis-ci.org/npmtest/node-npmtest-docxtemplater)",
+    "devDependencies": {
+        "docxtemplater": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-docxtemplater",
+    "keywords": [
+        "coverage",
+        "test",
+        "docxtemplater"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_docxtemplater.js",
+    "name": "npmtest-docxtemplater",
+    "nameAlias": "npmtest_docxtemplater",
+    "nameOriginal": "npmtest-docxtemplater",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-docxtemplater.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
