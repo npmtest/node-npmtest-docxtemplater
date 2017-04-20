@@ -1,4 +1,7 @@
-# test coverage for  [docxtemplater (v3.0.11)](https://github.com/open-xml-templating/docxtemplater#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-docxtemplater.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-docxtemplater) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-docxtemplater.svg)](https://travis-ci.org/npmtest/node-npmtest-docxtemplater)
+# npmtest-docxtemplater
+
+#### basic test coverage for  [docxtemplater (v3.0.11)](https://github.com/open-xml-templating/docxtemplater#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-docxtemplater.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-docxtemplater) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-docxtemplater.svg)](https://travis-ci.org/npmtest/node-npmtest-docxtemplater)
+
 #### .docx generator working with templates and data (like Mustache)
 
 [![NPM](https://nodei.co/npm/docxtemplater.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/docxtemplater)
